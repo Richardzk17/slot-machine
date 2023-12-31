@@ -54,8 +54,6 @@ button,
     justify-items: center;
     border-radius: 5px;
     box-shadow: inset 5px 5px 20px 2px rgba(110, 110, 110, 0.65);
-
-
 }
 
 .title {
@@ -103,12 +101,11 @@ button,
     font-size: 18px;
     cursor: pointer;
     text-align: center;
-    text-decoration: none;
-    outline: none;
     color: #fff;
     background-color: #d42714;
-    border-radius: 15px;
-    box-shadow: 0 4px #504f4f;
+    border-radius: 10px;
+    box-shadow: 0 4px #cb3f3f;
+    animation: 4s infinite glow;
 }
 
 .btnReset:hover {
@@ -127,12 +124,11 @@ button,
     font-size: 18px;
     cursor: pointer;
     text-align: center;
-    text-decoration: none;
-    outline: none;
     color: #fff;
     background-color: #0ab812;
-    border-radius: 15px;
-    box-shadow: 0 4px #504f4f;
+    border-radius: 10px;
+    box-shadow: 0 4px #8fe049;
+    animation: 4s infinite glow;
 }
 
 .btnSpin:hover {

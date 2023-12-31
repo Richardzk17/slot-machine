@@ -12,8 +12,6 @@ let bankRoll = 101
 let credit = 1
 let stop
 
-console.log(bankRoll)
-
 spinBtn.addEventListener('click', handleClick)
 resetBtn.addEventListener('click', render)
 
@@ -33,28 +31,26 @@ function spin() {
     }
 
     winCombo()
-    console.log(slots)
     messageEl.textContent = `$ ${bankRoll}`
-
+    console.log(slots)
 }
 
-//return money= ((money-wager) + (wager*2));
 
 
 function winCombo() {
     reel1.textContent = slots[0]
     reel2.textContent = slots[1]
     reel3.textContent = slots[2]
+    console.log(bankRoll)
 
     if (slots[0] === slots[1] && slots[0] !== slots[2]) {
         reel1.style.background = 'gold'
         reel2.style.background = 'gold'
-       return bankRoll = ((bankRoll - credit) + (credit + 6))
+       return bankRoll = bankRoll - credit + (credit + 4)
     } else if (slots[0] === slots[1] && slots[0] === slots[2]) {
         reel1.style.background = 'gold'
         reel2.style.background = 'gold'
-        reel3.style.background = 'gold'
-        return bankRoll = ((bankRoll - credit) + (credit + 15))
+       return bankRoll = bankRoll - credit + (credit + 12)
     } else {
         return bankRoll -= 1
     }
@@ -66,8 +62,6 @@ function handleClick() {
     }
     spin()
 }
-
-
 
 function render() {
     bankRoll = 100
